@@ -1,0 +1,232 @@
+
+:root {
+  --side-panel-width: 250px;
+}
+
+.notifications-panel {
+  padding: 3%;
+  background-color: #eff3f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 30px;
+  padding-right: 0;
+  height: 100vh;
+}
+
+.notifications-panel h2 {
+font-family:monospace;
+font-size:xxx-large;
+text-decoration-line: underline;
+padding-bottom: 25px;
+margin-top: 0px;
+color: #012a68f9;
+text-align: left;
+}
+
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.notification-item {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
+  margin-right: 110px;
+}
+
+.notification-item h4 {
+  margin: 0 0 10px;
+  font-family: monospace;
+  font-size: 16px;
+  color: #012a68f9;
+}
+
+.notification-item p {
+  margin: 0 0 10px;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.notification-item small {
+  font-family: monospace;
+  font-size: 14px;
+  color: #555;
+}
+
+.post-notification-btn {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 54px;
+}
+
+.post-notification-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Modal styling */
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  color: #012a68f9;
+}
+
+.ReactModal__Content {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #eff3f5;
+  max-width: 600px;
+  width: 35%;
+  margin: 10px 10px 10px 10px;
+  position: relative;
+}
+
+/* Form styling inside the modal */
+.notification-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 10px 10px 10px;
+}
+
+.notification-form label {
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.notification-form input{
+  padding: 5px;
+  margin-left:  30px;
+  padding-right: 110px;
+  border-radius: 4px;
+  border: 1px solid black;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.post-btn {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.post-btn:hover {
+  background-color: #0056b3;
+}
+
+.close-btn {
+  background-color: #eff3f5;
+  color: #030303;
+  border: none;
+  padding-top: 9px;
+  padding-left: 19px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.close-btn:hover {
+  background-color:#eff3f5;
+}
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  /* Adjustments for tablets (up to 1024px width) */
+
+  .notifications-panel {
+    margin-left: 15px;
+    padding-left: 30px;
+  }
+
+  .notification-item {
+    margin-right: 20px;
+  }
+
+  .post-notification-btn {
+    margin-left: 30px;
+  }
+
+  .ReactModal__Content {
+    width: 50%;
+  }
+
+  .notification-form input {
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjustments for tablets (up to 768px width) */
+
+  .notifications-panel {
+    margin-left: 10px;
+    padding-left: 30px;
+  }
+
+  .notification-item {
+    margin-right: 10px;
+  }
+
+  .post-notification-btn {
+    margin-left: 20px;
+  }
+
+  .ReactModal__Content {
+    width: 70%;
+  }
+
+  .notification-form input {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjustments for mobile devices (up to 480px width) */
+
+  .notifications-panel {
+    padding: 5%;
+    margin-left: 5px;
+    padding-left: 30px;
+  }
+
+  .notification-item {
+    margin-right: 5px;
+  }
+
+  .post-notification-btn {
+    margin-left: 10px;
+  }
+
+  .ReactModal__Content {
+    width: 90%;
+    margin: 5px;
+  }
+
+  .notification-form input {
+    padding-right: 10px;
+  }
+}

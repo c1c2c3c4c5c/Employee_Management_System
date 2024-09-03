@@ -1,0 +1,221 @@
+:root {
+  --side-panel-width: 250px;
+}
+
+.reporting {
+  padding: 3%;
+  background-color: #eff3f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 35px;
+}
+
+.reporting h2{
+font-family:monospace;
+font-size:xxx-large;
+text-decoration-line: underline;
+padding-bottom: 13px;
+margin-top: 0px;
+color: #012a68f9;
+text-align: left;
+}
+
+.report-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.report-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+.report-item h4 {
+  margin: 0 0 10px 10px;
+  color: #012a68f9;
+  font-family: monospace;
+  font-size: x-large;
+  
+}
+
+.report-item p {
+  margin: 0 0 10px;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.report-item p strong {
+  display: inline-block;
+  min-width: 120px;
+}
+
+.status {
+  font-weight: bold;
+  color: #333;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.action-button.secondary {
+  background-color: #f44336;
+  color: white;
+}
+
+.action-button:not(.secondary) {
+  background-color: #007bff;
+  /* Updated color */
+  color: white;
+}
+
+.action-button:not(.secondary):hover {
+  background-color: #0056b3;
+  /* Updated hover color */
+}
+
+/* Responsive Styles */
+
+/* For Tablets */
+@media (max-width: 1024px) {
+  .reporting {
+    margin-left: 20px;
+    padding: 4%;
+  }
+
+  .reporting h2 {
+    font-size: xx-large;
+    padding-bottom: 10px;
+  }
+
+  .report-item {
+    font-size: 16px;
+  }
+
+  .report-item h4 {
+    font-size: large;
+  }
+
+  .report-item p {
+    font-size: 15px;
+  }
+
+  .report-item p strong {
+    min-width: 100px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    /* Stack buttons vertically on tablets */
+  }
+
+  .action-button {
+    width: 100%;
+    /* Full width action buttons */
+    margin-bottom: 10px;
+    /* Space between buttons */
+  }
+}
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+  .reporting {
+    margin-left: 10px;
+    padding: 5%;
+  }
+
+  .reporting h2 {
+    font-size: x-large;
+    padding-bottom: 8px;
+  }
+
+  .report-item {
+    font-size: 14px;
+  }
+
+  .report-item h4 {
+    font-size: medium;
+  }
+
+  .report-item p {
+    font-size: 14px;
+  }
+
+  .report-item p strong {
+    min-width: 80px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    /* Stack buttons vertically on mobile devices */
+  }
+
+  .action-button {
+    width: 100%;
+    /* Full width action buttons */
+    margin-bottom: 10px;
+    /* Space between buttons */
+    font-size: 12px;
+    /* Adjust font size for smaller screens */
+  }
+}
+
+/* For Extra Small Devices */
+@media (max-width: 480px) {
+  .reporting {
+    margin-left: 5px;
+    padding: 8%;
+  }
+
+  .reporting h2 {
+    font-size: large;
+    padding-bottom: 6px;
+  }
+
+  .report-item {
+    font-size: 12px;
+  }
+
+  .report-item h4 {
+    font-size: small;
+  }
+
+  .report-item p {
+    font-size: 12px;
+  }
+
+  .report-item p strong {
+    min-width: 60px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    /* Stack buttons vertically */
+  }
+
+  .action-button {
+    width: 100%;
+    /* Full width action buttons */
+    margin-bottom: 10px;
+    /* Space between buttons */
+    font-size: 12px;
+    /* Adjust font size for very small screens */
+    padding: 6px 10px;
+    /* Adjust padding for small screens */
+  }
+}

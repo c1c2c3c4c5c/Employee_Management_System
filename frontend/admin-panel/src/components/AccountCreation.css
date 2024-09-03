@@ -1,0 +1,216 @@
+/* Base styles (unchanged) */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #e9ecef;
+}
+
+.account-creation {
+  background-color: #eff3f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  margin-left: 40px;
+  height: 100%;
+  color: #012a68f9;
+}
+
+.account-creation:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.account-creation h2 {
+  margin: 40px 0 25px 45px;
+  padding-bottom: 0px;
+  font-family: monospace;
+  font-size: xxx-large;
+  text-decoration-line: underline;
+  padding-bottom: 17px;
+  color: #012a68f9;
+  text-align: left;
+}
+
+.account-creation form {
+  margin: 0px 0 20px 45px;
+  display: flex;
+  flex-direction: column;
+}
+
+.account-creation .form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.account-creation form label {
+  width: 200px;
+  margin-right: 70px;
+  color: #012a68f9;
+  font-size: 19px;
+  margin-left: 240px;
+  text-align: left;
+}
+
+.account-creation form input,
+.account-creation form select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  margin-left: 10px;
+  margin-right: 300px;
+}
+
+.account-creation form input:focus,
+.account-creation form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.account-creation form button {
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin: 10px auto;
+  margin-bottom: 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+}
+
+.account-creation form button:hover {
+  background-color: #1976d2;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .account-creation {
+    margin-left: 50px;
+    /* Adjusted margin for smaller screens */
+  }
+
+  .account-creation form {
+    margin-left: 20px;
+  }
+
+  .account-creation form input,
+  .account-creation form select {
+    margin-left: 10px;
+    margin-right: 50px;
+  }
+
+  .account-creation form label {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .account-creation {
+    margin-left: 40px;
+    padding-left: 20px;
+  }
+
+  .account-creation h2 {
+    font-size: xx-large;
+    margin-left: 10px;
+  }
+
+  .account-creation form {
+    margin: 0px 0 20px 10px;
+  }
+
+  .account-creation form input,
+  .account-creation form select {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .account-creation form label {
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+    font-size: 14px;
+  }
+
+  .account-creation form button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .account-creation {
+    margin-left: 30px;
+    padding-left: 20px;
+  }
+
+  .account-creation h2 {
+    font-size: x-large;
+    margin-left: 0;
+    padding-bottom: 10px;
+  }
+
+  .account-creation form {
+    margin: 0px;
+  }
+
+  .account-creation .form-group {
+    flex-direction: column;
+  }
+
+  .account-creation form label {
+    margin-bottom: 10px;
+    width: auto;
+  }
+
+  .account-creation form input,
+  .account-creation form select {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .account-creation form button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .account-creation {
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+
+  .account-creation h2 {
+    font-size: large;
+  }
+
+  .account-creation form {
+    margin: 0px;
+    padding: 10px;
+  }
+
+  .account-creation form label {
+    font-size: 12px;
+  }
+
+  .account-creation form input,
+  .account-creation form select {
+    margin: 5px 0;
+  }
+
+  .account-creation form button {
+    padding: 10px;
+  }
+}

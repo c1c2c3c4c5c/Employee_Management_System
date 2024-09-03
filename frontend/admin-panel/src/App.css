@@ -1,0 +1,42 @@
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar-toggle {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  padding: 10px;
+  background-color: #60e8ed;
+  color: rgb(139, 40, 94);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.sidebar-toggle:hover {
+  background-color: #8ccaea;
+}
+
+.side-panel.open {
+  width: 150px;
+  transition: width 0.3s;
+}
+
+.side-panel.closed {
+  width: 0;
+  overflow: hidden;
+  transition: width 0.3s;
+}
+
+.dashboard-layout {
+  flex: 1;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  margin-left: 35px;
+}

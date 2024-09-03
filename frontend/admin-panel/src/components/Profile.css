@@ -1,0 +1,166 @@
+.profile-container {
+  padding: 2%;
+  background-color: #eff3f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0px 0px 0px 45px;
+}
+
+.profile-container h2{
+  font-family:monospace;
+  font-size:xx-large;
+  text-decoration-line: underline;
+  padding-bottom: 13px;
+  color: #012a68f9;
+  text-align: center;
+}
+
+.profile-info {
+  background-color: #ffffff;
+  padding: 60px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info p {
+  margin: 5px 0;
+  padding: 10px;
+  font-family:monospace;
+  font-size: 18px;
+}
+
+.profile-info p strong {
+  display: inline-block;
+  min-width: 120px;
+}
+
+.profile-info .upload-certificate {
+  text-align: right;
+}
+
+.upload-btn {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.upload-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+
+/* For Tablets */
+@media (max-width: 1024px) {
+  .profile-container {
+    margin: 0 15px;
+    padding: 5%;
+  }
+
+  .profile-header {
+    font-size: x-large;
+    padding-bottom: 15px;
+  }
+
+  .profile-info {
+    padding: 40px;
+  }
+
+  .profile-info p {
+    font-size: 16px;
+  }
+
+  .profile-info p strong {
+    min-width: 100px;
+  }
+
+  .profile-info .upload-certificate {
+    text-align: center;
+    /* Center align for tablets */
+  }
+}
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+  .profile-container {
+    margin: 0 10px 0 20px;
+    padding: 8%;
+    
+  }
+
+  .profile-header {
+    font-size: large;
+    padding-bottom: 12px;
+  }
+
+  .profile-info {
+    padding: 30px;
+  }
+
+  .profile-info p {
+    font-size: 14px;
+  }
+
+  .profile-info p strong {
+    min-width: 80px;
+  }
+
+  .profile-info .upload-certificate {
+    text-align: center;
+    /* Center align for mobile devices */
+    margin-top: 20px;
+    /* Add some margin for spacing */
+  }
+
+  .upload-btn {
+    width: 100%;
+    /* Full width button on mobile */
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    margin: 0 0px 0 25px;
+    padding: 9%;
+    height: 100vh;
+  }
+
+  .profile-container h2 {
+    font-size: 22px;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+
+  .profile-info {
+    padding: 20px;
+    
+  }
+
+  .profile-info p {
+    font-size: 16px;
+    
+  }
+
+  .profile-info p strong {
+    min-width: 60px;
+    height: 25px;
+  }
+
+  .profile-info .upload-certificate {
+    text-align: center;
+    /* Center align for very small screens */
+  }
+
+  .upload-btn {
+    width: 100%;
+    /* Full width button on very small screens */
+    padding: 15px;
+    font-size: 14px;
+    margin-bottom: 30px;
+    /* Slightly larger text for readability */
+  }
+}

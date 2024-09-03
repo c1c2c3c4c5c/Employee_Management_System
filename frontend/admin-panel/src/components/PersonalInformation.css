@@ -1,0 +1,103 @@
+.personal-info {
+  background-color: #ffffff;
+  padding: 27px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  font-size: 17px;
+  padding-bottom: 33px;
+}
+
+.personal-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.personal-info h2 {
+  margin: 0 0 20px 0;
+  color: #2196f3;
+  border-bottom: 2px solid #2196f3;
+  padding-bottom: 10px;
+}
+.personal-info p{
+  margin-bottom: 87px;
+}
+
+.personal-info .details {
+  list-style: none;
+  
+}
+
+.personal-info .details li {
+  margin-bottom: 10px;
+
+}
+
+.personal-info .details li span {
+  font-weight: bold;
+  color: #333;
+  padding-bottom: 10px;
+}
+
+.personal-info .details li span.label {
+  display: inline-block;
+  width: 120px;
+  
+}
+
+/* Responsive Styles */
+
+/* For Tablets */
+@media (max-width: 1024px) {
+  .personal-info {
+    padding: 20px;
+    font-size: 15px;
+  }
+
+  .personal-info .details li span.label {
+    width: 100px;
+  }
+
+  .personal-info p {
+    margin-bottom: 50px;
+    /* Adjust spacing for better fit on tablets */
+  }
+}
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+  .personal-info {
+    padding: 15px;
+    font-size: 13px;
+  }
+  .personal-info h2{
+    font-size: 18px;
+  }
+
+  .personal-info .details li span.label {
+    width: 80px;
+  }
+
+  .personal-info p {
+    margin-bottom: 30px;
+    /* Adjust spacing for better fit on mobile */
+  }
+}
+
+/* For Extra Small Devices */
+@media (max-width: 480px) {
+  .personal-info {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .personal-info .details li span.label {
+    width: 60px;
+  }
+
+  .personal-info p {
+    margin-bottom: 20px;
+    /* Reduce spacing for very small screens */
+  }
+}
